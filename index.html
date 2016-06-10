@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Awesome App Name Randomizer!</title>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0,
+                                   maximum-scale=1.0,
+                                   user-scalable=no,
+                                   minimal-ui">
+<link rel="stylesheet" href="//cdn.kik.com/app/3.0.0/app.min.css">
+</head>
+<body>
+<div class="app-page" data-page="home">
+  <div class="app-topbar">
+    <div class="app-title">Get an awesome app name!</div>
+  </div>
+  <div class="app-content">
+    <div class="app-section">
+	Number of syllables in each word:
+    	<input type="number" id="syllables" min="1" max="4" step="1" value="2">
+    </div>
+    
+      <div class="app-button" id="randomize" type="submit">Randomize!</div>
+    <div class="app-section">
+      <p id="appname">Name will go here!</p>
+      <div id="playbutton">&#128172;</div>
+      <div class="app-button" data-target="settings"><button><small>Speech settings</small></button></div>
+    </div>
+    <div class="app-section">
+      <p id="spotifyappname">App name</p>
+      <div id="spotifyappnameimage"></div>
+
+    </div>
+    <div class="app-section">
+      <p id="albumadjective">Album</p>
+      <div id="albumadjectiveimage"></div> 
+      
+    </div>
+    <div class="app-section">
+      <p id="albumnoun">Album</p>
+      <div id="albumnounimage"></div>
+
+    </div>
+    <div class="app-section">
+      <p id="artistadjective">Artist</p>
+      <div id="artistadjectiveimage"></div>
+
+    </div>
+    <div class="app-section">
+      <p id="artistnoun">Artist</p>
+      <div id="artistnounimage"></div>
+
+    </div>
+  </div>
+</div>
+
+<div class="app-page" data-page="settings">
+  <div class="app-topbar">
+    <div class="app-button left" data-back></div>
+    <div class="app-title">Speech settings</div>
+  </div>
+  <div class="app-content">
+    <div class="app-section">
+      Voice:
+      <select name="drop_down" id="voices">
+      
+        <option value="None" selected="Selected">Select type</option>
+      </select>
+      
+    </div>
+    
+    <div class="app-section">
+     <p id="wordmeaning"></p> 
+    </div>
+  </div>
+</div>
+
+
+<script src="zepto.js"></script>
+<script src="//cdn.kik.com/app/3.0.0/app.min.js"></script>
+<script src="jquery-ajax.js"></script>
+
+</body>
+</html>
